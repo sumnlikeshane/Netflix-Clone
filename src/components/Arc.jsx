@@ -1,7 +1,9 @@
 function Arc() {
   return (
     <>
-        <div className="arc"></div>
+      <div className="arc-separator">
+          <div className="arc"></div>
+      </div>
     </>
 
   )

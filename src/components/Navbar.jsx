@@ -9,9 +9,9 @@ export default function Navbar() {
         </a>
         <div className="nav-links">
           <div className="language-select-container">
-            <LanguageIcon className="languageIcon" />
-            <select className="language-select">
-              <option>English</option>
+            
+            <select className="language-select" style={{padding:"0"}}>
+              <option> <LanguageIcon className="languageIcon" /> English</option>
               <option>हिन्दी</option>
             </select>
           </div>
