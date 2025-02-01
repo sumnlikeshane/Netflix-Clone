@@ -17,6 +17,7 @@ const movies = [
       padding: '10px',
       gap: '15px',
       overflowX: "auto",
+      marginBottom:"40px"
     },
     movieCard: {
       width: '200px',

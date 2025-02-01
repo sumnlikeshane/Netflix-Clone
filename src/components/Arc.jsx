@@ -1,12 +1,11 @@
 function Arc() {
   return (
     <>
-      <div className="arc-separator">
-          <div className="arc"></div>
+      <div className="arc-container">
+        <div className="arc"></div>
       </div>
     </>
-
-  )
+  );
 }
 
-export default Arc
+export default Arc;

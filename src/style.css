@@ -50,15 +50,8 @@ body {
   appearance: none;
   height: 2rem;
   width: 7.75rem;
-  padding: 0;
-}
-
-.languageIcon {
-  margin-right: 8px;
-  width: 20px;
-  height: 20px;
-  position: relative;
-  left: 5px;
+  background: url('./components/LanguageIcon.jsx') no-repeat right 10px center;
+  background-size: 16px;
 }
 
 .nav-links {
@@ -81,6 +74,7 @@ body {
   border-radius: 3px;
   border: none;
   cursor: pointer;
+  font-weight: 600;
 
   transition: 0.2s ease-in-out;
 }
@@ -150,9 +144,9 @@ body {
   flex: 1;
   padding: 15px 10px;
   font-size: 1rem;
-  border: 1px solid #8c8c8c;
+  border: 1px solid #6a6a6a;
   border-radius: 4px;
-  background: rgb(0,0,0,0);
+  background: rgba(10, 10, 10, 0.653);
   color: white;
   background-clip: padding-box;
 }
@@ -163,7 +157,7 @@ body {
   border: none;
   padding: 15px 30px;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 650;
   border-radius: 4px;
   cursor: pointer;
   display: flex;
@@ -181,24 +175,21 @@ body {
 }
 
 /* arc styling */
+.arc-container{
+  position: relative;
+  top: -100px;
+}
 .arc {
   box-sizing: border-box;
   position: absolute;
   height: 100px;
   width: 100%;
-  top: 800px;
   bottom: 0;
   z-index: 10;
   margin: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  border: solid 0.25rem transparent;
+  border-top: solid 0.25rem transparent;
   border-top-left-radius: 50% 100%;
   border-top-right-radius: 50% 100%;
   border-bottom: none;
@@ -208,32 +199,37 @@ body {
       rgba(0, 0, 0, 0.1) 100%
     ),
     black;
-  -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  position: relative;
 }
 
 .arc:before {
   content: "";
-  position: relative;
-  top: 0;
-  right: 0;
+  position: absolute;
+  top: -0.25rem;
+  left: -0.25rem;
+  right: -0.25rem;
   bottom: 0;
-  left: 0;
-  z-index: 5;
-  margin-top: -0.25rem;
-  border-radius: inherit;
   background: linear-gradient(
     to right,
-    rgba(33, 13, 22, 1) 16%,
-    rgba(184, 40, 105, 1),
-    rgba(229, 9, 20, 1),
-    rgba(184, 40, 105, 1),
-    rgba(33, 13, 22, 1) 84%
+    transparent 0%,
+    rgba(33, 13, 22, 0) 0.5%,
+    rgba(184, 40, 105, 1) 15%,
+    rgba(229, 9, 20, 1) 50%,
+    rgba(184, 40, 105, 1) 85%,
+    rgba(33, 13, 22, 0) 99.5%,
+    transparent 100%
   );
-  mix-blend-mode: normal;
-  opacity: 1;
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  border: 0.25rem solid transparent;
+  border-bottom: 0;
 }
-
 .arc-text {
   width: 1176px;
   font-size: 1.5rem;
@@ -244,14 +240,22 @@ body {
 
 .bottom-main {
   max-width: 1172px;
-
+  position: relative;
   margin: auto;
+  top:-150px;
 }
+
+.footer{
+  position: relative;
+  top:-150px;
+}
+
 
 .cards-container{
   display: flex;
   gap:10px;
 }
+
 
 .card{
   background: linear-gradient(135deg, #1f1f39 0%, #1f1633 40%, #3c1033 100%);  
@@ -341,7 +345,7 @@ body {
 
 .faq-email-signup {
   max-width: 1212px;
-  margin: 40px auto 0;
+  margin: 70px auto 0;
   text-align: center;
 }
 

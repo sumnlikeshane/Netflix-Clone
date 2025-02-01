@@ -11,7 +11,7 @@ export default function Navbar() {
           <div className="language-select-container">
             
             <select className="language-select" style={{padding:"0"}}>
-              <option> <LanguageIcon className="languageIcon" /> English</option>
+              <option>English</option>
               <option>हिन्दी</option>
             </select>
           </div>
