@@ -8,12 +8,14 @@ export default function Navbar() {
           <NetflixLogo />
         </a>
         <div className="nav-links">
-          <div className="language-select-container">
-            
-            <select className="language-select" style={{padding:"0"}}>
-              <option>English</option>
-              <option>हिन्दी</option>
-            </select>
+          <div className="language-container">
+            <div className="select-wrapper">
+              <LanguageIcon className="languageicon" />
+              <select className="language-select">
+                <option value="en">English</option>
+                <option value="hi">हिन्दी</option>
+              </select>
+            </div>
           </div>
           <button className="sign-in-btn">Sign In</button>
         </div>

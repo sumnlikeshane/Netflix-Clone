@@ -41,18 +41,6 @@ body {
   fill: #e50914;
 }
 
-.language-select-container {
-  display: flex;
-  align-items: center;
-}
-
-.language-select {
-  appearance: none;
-  height: 2rem;
-  width: 7.75rem;
-  background: url('./components/LanguageIcon.jsx') no-repeat right 10px center;
-  background-size: 16px;
-}
 
 .nav-links {
   display: flex;
@@ -63,8 +51,16 @@ body {
   background: transparent;
   color: white;
   border: 1px solid white;
-  padding: 7px 15px;
+  padding: 3px 15px;
   border-radius: 3px;
+
+  padding-left: 35px;
+  appearance: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+
 }
 
 .sign-in-btn {
@@ -79,6 +75,18 @@ body {
   transition: 0.2s ease-in-out;
 }
 
+.custom-select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.language-icon {
+  position: relative;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Prevent interaction with the icon */
+}
 /* main section styles */
 .main {
   height: 100vh;
@@ -242,7 +250,7 @@ body {
   max-width: 1172px;
   position: relative;
   margin: auto;
-  top:-150px;
+  top:-100px;
 }
 
 .footer{
@@ -256,6 +264,11 @@ body {
   gap:10px;
 }
 
+.card-title{
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
 
 .card{
   background: linear-gradient(135deg, #1f1f39 0%, #1f1633 40%, #3c1033 100%);  

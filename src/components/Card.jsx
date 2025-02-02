@@ -6,6 +6,7 @@ import TelevisionIcon from "./TelevisionIcon"
 function Card() {
   return (
     <>
+        <h2 className="card-title">More reasons to join</h2>
         <div className="cards-container">
             <div className="card">
                 <h2 className="card-heading">Enjoy on your TV</h2>

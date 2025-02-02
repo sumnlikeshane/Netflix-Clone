@@ -13,8 +13,9 @@ function App() {
       <Home />
       <Arc />
       <div className="bottom-main">
-        <h2>More reasons to join</h2>
+        
         <List className="List"/>
+        
         <Card />
         <FAQs />
       </div>
