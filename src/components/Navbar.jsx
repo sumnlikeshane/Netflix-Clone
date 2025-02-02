@@ -10,11 +10,11 @@ export default function Navbar() {
         <div className="nav-links">
           <div className="language-container">
             <div className="select-wrapper">
-              <LanguageIcon className="languageicon" />
               <select className="language-select">
                 <option value="en">English</option>
                 <option value="hi">हिन्दी</option>
               </select>
+             <span className="languageicon" ><LanguageIcon /></span> 
             </div>
           </div>
           <button className="sign-in-btn">Sign In</button>

@@ -39,16 +39,17 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <div className="language-selector">
-          <LanguageIcon className="languageIcon" />
-            <select defaultValue="en" className="language-select">
-              <option value="en">English</option>
-              <option value="hi">हिन्दी</option>
-            </select>
+        <div className="select-wrapper">
+              <select className="language-select">
+                <option value="en">English</option>
+                <option value="hi">हिन्दी</option>
+              </select>
+             <span className="languageicon" ><LanguageIcon /></span> 
+            </div>
+            <p className="footer-country">Netflix India</p>
           </div>
-          <p className="footer-country">Netflix India</p>
+         
         </div>
-      </div>
     </footer>
   );
 };
