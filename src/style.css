@@ -98,7 +98,7 @@ body {
 .main {
   height: 100vh;
   position: relative;
-  background: url(../public/Backdrop.jpg) center/cover no-repeat;
+  background: url(/Backdrop.jpg) center/cover no-repeat;
 }
 
 .main::after {
