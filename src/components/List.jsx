@@ -1,14 +1,14 @@
 const movies = [
-  { id: 1, imageUrl: '../../public/Squidgame.webp' },
-  { id: 2, imageUrl: '../../public/venom.webp' },
-  { id: 3, imageUrl: '../../public/pushpa.webp' },
-  { id: 4, imageUrl: '../../public/bhool.webp' },
-  { id: 5, imageUrl: '../../public/lucky.webp' },
-  { id: 6, imageUrl: '../../public/mismatched.webp' },
-  { id: 7, imageUrl: '../../public/deva.webp' },
-  { id: 8, imageUrl: '../../public/sl.webp' },
-  { id: 9, imageUrl: '../../public/black.webp' },
-  { id: 10, imageUrl: '../../public/amaran.webp' },
+  { id: 1, imageUrl: '/Squidgame.webp' },
+  { id: 2, imageUrl: '/venom.webp' },
+  { id: 3, imageUrl: '/pushpa.webp' },
+  { id: 4, imageUrl: '/bhool.webp' },
+  { id: 5, imageUrl: '/lucky.webp' },
+  { id: 6, imageUrl: '/mismatched.webp' },
+  { id: 7, imageUrl: '/deva.webp' },
+  { id: 8, imageUrl: '/sl.webp' },
+  { id: 9, imageUrl: '/black.webp' },
+  { id: 10, imageUrl: '/amaran.webp' },
 ];
 
 const styles = {
